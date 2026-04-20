@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity</title>
+</head>
+<body>
+    <p>It might rain &#9748; today
+    <br>
+    Weather is cloudy &#x1F325; today.
+    <br>
+    I am going to drink water &#128167 from a bottle &#x1F964.
+    </p>
+
+
+
+
+
+
+
+
+
+    <h1>Below section is just an intro about entity:-</h1>
+
+    <section>
+        <h2>HTML Entities: Definition and Usage</h2>
+        
+        <p>
+            In HTML, an <strong>entity</strong> is a special string of text used to display characters that are either <strong>reserved</strong> (like &lt; and &gt;) or <strong>invisible</strong> (like a non-breaking space).
+        </p>
+
+        <h3>What is an HTML Entity?</h3>
+        <p>An entity always follows this specific structure:</p>
+        <ul>
+            <li><strong>Starts with:</strong> An ampersand (<code>&amp;</code>)</li>
+            <li><strong>The Name:</strong> A shorthand code (like <code>copy</code> or <code>gt</code>)</li>
+            <li><strong>Ends with:</strong> A semicolon (<code>;</code>)</li>
+        </ul>
+
+        
+
+        <hr>
+
+        <h3>Why do we use them?</h3>
+        <p>There are two main reasons for using entities:</p>
+
+        <h4>1. Reserved Characters (The "Code Conflict" fix)</h4>
+        <p>
+            If you want to type "5 < 10" on your webpage, you cannot simply type the <code>&lt;</code> symbol. The browser will think you are starting a new HTML tag (like <code>&lt;div&gt;</code>) and get confused. 
+            <br>
+            <strong>Instead, you write:</strong> <code>5 &amp;lt; 10</code>
+            <br>
+            <strong>The Browser shows:</strong> 5 < 10
+        </p>
+
+        <h4>2. Invisible/Special Characters</h4>
+        <p>
+            Standard keyboards do not have keys for symbols like "Copyright" or a "Non-breaking space."
+            <br>
+            <strong>Instead, you write:</strong> <code>&amp;copy; 2026</code>
+            <br>
+            <strong>The Browser shows:</strong> &copy; 2026
+        </p>
+
+        <hr>
+
+        <h3>Common Entities Cheat Sheet</h3>
+        <table border="1" cellpadding="10" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Result</th>
+                    <th>Entity Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>(space)</td>
+                    <td><code>&amp;nbsp;</code></td>
+                    <td>Non-breaking space (Forces a space that won't wrap to a new line)</td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td><code>&amp;lt;</code></td>
+                    <td>Less than (Safe way to show the bracket)</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td><code>&amp;gt;</code></td>
+                    <td>Greater than</td>
+                </tr>
+                <tr>
+                    <td>&amp;</td>
+                    <td><code>&amp;amp;</code></td>
+                    <td>Ampersand symbol</td>
+                </tr>
+                <tr>
+                    <td>"</td>
+                    <td><code>&amp;quot;</code></td>
+                    <td>Double quote</td>
+                </tr>
+                <tr>
+                    <td>&copy;</td>
+                    <td><code>&amp;copy;</code></td>
+                    <td>Copyright symbol</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
+        <hr>
+
+        <h3>Practical Example</h3>
+        <p>
+            If you want to explain code inside a paragraph without the browser trying to run it:
+            <br><br>
+            <strong>Instead of:</strong> <code>&lt;p&gt;We use the video tag&lt;/p&gt;</code>
+            <br>
+            <strong>You write:</strong> <code>&lt;p&gt;We use the &amp;lt;video&amp;gt; tag&lt;/p&gt;</code>
+        </p>
+    </section>
+</body>
+</html>

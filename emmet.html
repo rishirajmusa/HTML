@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+    
+
+    <!-- if i do div>h1+p+ul>li*2 
+     
+    it will give below results-->
+        <div>
+            <h1></h1>
+            <p></p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+            
+            
+
+
+    <h1>Below are the emmet plugin information</h1>
+    <section>
+    <h2>Emmet: The Developer's Shorthand</h2>
+    
+    <p>
+        <strong>Emmet</strong> is an essential plugin for web developers that speeds up the coding process. 
+        It works by taking abbreviations and expanding them into full HTML structures.
+    </p>
+
+    <h3>Common Emmet Symbols</h3>
+    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Example Abbreviation</th>
+                <th>Resulting HTML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>&gt;</strong></td>
+                <td>Child</td>
+                <td><code>ul&gt;li</code></td>
+                <td>A list item inside a list</td>
+            </tr>
+            <tr>
+                <td><strong>+</strong></td>
+                <td>Sibling</td>
+                <td><code>h1+p</code></td>
+                <td>A paragraph right after a heading</td>
+            </tr>
+            <tr>
+                <td><strong>*</strong></td>
+                <td>Multiplication</td>
+                <td><code>li*3</code></td>
+                <td>Three list items in a row</td>
+            </tr>
+            <tr>
+                <td><strong>.</strong></td>
+                <td>Class</td>
+                <td><code>p.main</code></td>
+                <td><code>&lt;p class="main"&gt;&lt;/p&gt;</code></td>
+            </tr>
+            <tr>
+                <td><strong>#</strong></td>
+                <td>ID</td>
+                <td><code>div#hero</code></td>
+                <td><code>&lt;div id="hero"&gt;&lt;/div&gt;</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+    <h3>The "Magic" of Grouping</h3>
+    <p>
+        You can even combine these to build entire sections in one line. 
+        <br>
+        <strong>Try typing this in VS Code:</strong> <code>div>h2+p+ul>li*2</code>
+        <br>
+        <strong>It creates:</strong> A div containing a heading, a paragraph, and a list with two items!
+    </p>
+</section>
+</body>
+</html>
