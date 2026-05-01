@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <fieldset> 
+        <legend>First Form</legend>
+        <form action="server">
+        <label for="usern">Username: </label>
+        <input type="text" id="usern" placeholder="Enter Username" required>
+
+        <br>
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" placeholder="password here" required>
+
+        <br>
+        <!-- <input type="submit">  -->
+         <!-- This is one way of making button but another way is to use button element -->
+
+         <button type="submit">Login</button>
+         <button type="reset">Reset</button>
+         </form>
+    </fieldset>
+
+    <br>
+    <fieldset>
+
+        <form action="server">
+        <legend>Second Form</legend>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="age">
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="email">
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob"><br>
+        <label for="timeofbirth">Time of Birth:</label>
+        <input type="time" id="timeofbirth">
+        <br>
+        <label for="dateandtime">Date and Time:</label>
+        <input type="datetime-local" name="dateandtime" id="dateandtime">
+    
+        <br>
+        <label for="pic">Upload Picture:</label>
+        <input type="file" name="pic" id="pic">
+        <br>
+        <label for="favcolor">Choose Color</label>
+        <input type="color" name="favcolor" id="favcolor">
+        <br>
+
+        <label for="joiningmonth">Joining Month:</label>
+        <input type="month" id="joiningmonth" name="joiningmonth">
+        <br>
+        <label for="week">Choose a week:</label>
+        <input type="week" id="week" name="week">
+
+        <br>
+        <label for="insanityparameter">Insanity Parameter:</label>
+        <input type="range" id="insanityparameter" name="insanityparameter" min="0" max="100" step="5">
+        <br>
+        <label for="feedback">Feedback:</label>
+        <br>
+        <textarea name="feedback" id="feedback" rows="10" cols="30"> 
+        </textarea>
+        <br><br>
+
+
+        <br>
+
+        <br>
+        <h4>Gender</h4>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender">
+        <label for="others">Others</label>
+        <input type="radio" id="others" name="gender">
+        <br><br>
+
+
+        <h4>Choose from below options:</h4>
+        <label for="random1">Random option</label>
+        <input type="checkbox" id="random1" name="checkbox1">
+        <br>
+        <label for="ramdom2">Random option2</label>
+        <input type="checkbox" id="random2" name="checkbox2">
+
+        <br>
+
+
+        <h5>Some other checkbox features</h5>
+        <lable for="checkbox disabled">this option is disabled</lable>
+        <input type="checkbox" id="checkbox disabled" name="checked disabled" checked disabled>
+        <!-- above option has checked diabled written in last , it means it is disabled and checked -->
+
+        <lable for="disabled">disabled checkbox</lable>
+        <input type="checkbox" id="disabled" name="disabled checkbox" disabled>
+        <!-- disabled keyword will not let you check it -->
+         <br>
+
+        <label for="checked">checked</label>
+        <input type="checkbox" checked>
+        <br>
+
+        <br>
+        <label for="dropdown">choose any:</label>
+        <select>
+            <option>Choose 1</option>
+            <option>Choose 2</option>
+            <option>Choose 3</option>
+            <option>Choose 4</option>
+            <option>Choose 4</option>
+            <option>Choose 5</option>
+            <option>Choose 6</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="login"><i>Click to Login:-</i></label>
+        <button type="submit" id="login">Login</button>
+
+
+        </form>
+    </fieldset>
+    
+   
+
+         
+    </form>
+</body>
+</html>
