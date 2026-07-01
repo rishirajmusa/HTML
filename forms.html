@@ -29,8 +29,8 @@
     <br>
     <fieldset>
 
-        <form action="server">
         <legend>Second Form</legend>
+        <form action="server">
         <label for="name">Name: </label>
         <input type="text" id="name" placeholder="Enter your name">
         <br>
@@ -46,7 +46,8 @@
         <input type="time" id="timeofbirth">
         <br>
         <label for="dateandtime">Date and Time:</label>
-        <input type="datetime-local" name="dateandtime" id="dateandtime">
+        <input type="datetime-local" name="dateandtime" id="dateandtime"><br>
+        <b>name="email" tells the backend: "this value is an email"</b>
     
         <br>
         <label for="pic">Upload Picture:</label>
@@ -84,6 +85,7 @@
         <label for="others">Others</label>
         <input type="radio" id="others" name="gender">
         <br><br>
+        <b>Same name-> name="gender" → same group → only one can be selected</b>
 
 
         <h4>Choose from below options:</h4>
